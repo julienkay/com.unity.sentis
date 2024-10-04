@@ -7,7 +7,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the reduction operation to use in a scatter layer.
     /// </summary>
-    enum ScatterReductionMode
+    public enum ScatterReductionMode
     {
         /// <summary>
         /// Use no reduction.

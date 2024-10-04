@@ -7,7 +7,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the padding values for `Pad`.
     /// </summary>
-    enum PadMode
+    public enum PadMode
     {
         /// <summary>
         /// Use a constant value for the padded data.
@@ -34,7 +34,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the scaling mode to use for `Resize`.
     /// </summary>
-    enum ScaleMode
+    public enum ScaleMode
     {
         /// <summary>
         /// Use the size tensor directly for the shape of the output tensor.
@@ -49,7 +49,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the interpolation mode to use for `Resize`.
     /// </summary>
-    enum InterpolationMode
+    public enum InterpolationMode
     {
         /// <summary>
         /// Use the nearest element to the calculated coordinate. The exact behaviour depends on `nearestMode`.
@@ -68,7 +68,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for how to sample the nearest element in `Resize` when using `InterpolationMode.NearestMode`.
     /// </summary>
-    enum NearestMode
+    public enum NearestMode
     {
         /// <summary>
         /// Use rounding to the nearest integer coordinate. If the fractional part equals 0.5 then round down.
@@ -91,7 +91,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Padding mode for outside grid values.
     /// </summary>
-    enum PaddingMode
+    public enum PaddingMode
     {
         /// <summary>
         /// Use 0 for out-of-bound grid locations.
@@ -110,7 +110,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for how to transform between the coordinate in the output tensor and the coordinate in the input tensor in `Resize`.
     /// </summary>
-    enum CoordTransformMode
+    public enum CoordTransformMode
     {
         /// <summary>
         /// Use shifting by half a pixel before and after scaling.
@@ -133,7 +133,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for which part of the input matrix to retain in `Trilu`.
     /// </summary>
-    enum TriluMode
+    public enum TriluMode
     {
         /// <summary>
         /// Use retaining of the lower part of the input matrix.
@@ -148,7 +148,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the ordering of the elements in `DepthToSpace`.
     /// </summary>
-    enum DepthToSpaceMode
+    public enum DepthToSpaceMode
     {
         /// <summary>
         /// Use depth, column, row ordering where the data is arranged (by * blocksize * channels) + (bx * channels) + c.

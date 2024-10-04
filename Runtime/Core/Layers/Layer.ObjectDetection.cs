@@ -7,7 +7,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the formatting of the box data for `NonMaxSuppression`.
     /// </summary>
-    enum CenterPointBox
+    public enum CenterPointBox
     {
         /// <summary>
         /// Use TensorFlow box formatting. Box data is [y1, x1, y2, x2] where (y1, x1) and (y2, x2) are the normalized coordinates of any diagonal pair of box corners.
@@ -77,7 +77,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the pooling mode for `RoiAlign`.
     /// </summary>
-    enum RoiPoolingMode
+    public enum RoiPoolingMode
     {
         /// <summary>
         /// Use average pooling.

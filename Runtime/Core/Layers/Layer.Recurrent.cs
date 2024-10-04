@@ -5,7 +5,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the direction of a recurrent layer.
     /// </summary>
-    enum RnnDirection
+    public enum RnnDirection
     {
         /// <summary>
         /// Use only forward direction in the calculation.
@@ -24,7 +24,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for activation functions to apply in a recurrent layer.
     /// </summary>
-    enum RnnActivation
+    public enum RnnActivation
     {
         /// <summary>
         /// Use `Relu` activation: f(x) = max(0, x).
@@ -75,7 +75,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for the layout of the tensor in a recurrent layer.
     /// </summary>
-    enum RnnLayout
+    public enum RnnLayout
     {
         /// <summary>
         /// Use layout with sequence as the first dimension of the tensors.

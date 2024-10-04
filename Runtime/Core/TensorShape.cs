@@ -463,7 +463,7 @@ namespace Unity.Sentis
         /// </summary>
         /// <param name="axis">The axis to wrap.</param>
         /// <returns>The positive axis.</returns>
-        internal int Axis(int axis)
+        public int Axis(int axis)
         {
             Logger.AssertIsTrue(axis >= -rank && axis < rank, "IndexError: axis {0} is out of bounds shape of rank, {1}", axis, rank);
             return axis >= 0 ? axis : rank + axis;
@@ -879,7 +879,7 @@ namespace Unity.Sentis
         /// </summary>
         /// <param name="rank">The rank to which to broadcast to.</param>
         /// <returns>The broadcast tensor shape.</returns>
-        internal TensorShape BroadcastToRank(int rank)
+        public TensorShape BroadcastToRank(int rank)
         {
             Logger.AssertIsTrue(rank >= this.rank, "ValueError: broadcasting to lower rank tensor {0}, {1}", this.rank, rank);
             Logger.AssertIsTrue(rank <= maxRank, "ValueError: TensorShape are capped to rank=8, cannot broadcast shape {0} to rank > 8", this);
@@ -1000,7 +1000,7 @@ namespace Unity.Sentis
         /// <param name="axes">The axes along which to reduce.</param>
         /// <param name="keepDim">When the value is `true`, Sentis replaces the reduced axes with 1. Otherwise Sentis removes the reduced axes.</param>
         /// <returns>The reduced tensor shape.</returns>
-        internal TensorShape Reduce(ReadOnlySpan<int> axes, bool keepDim = true)
+        public TensorShape Reduce(ReadOnlySpan<int> axes, bool keepDim = true)
         {
             if (axes == null || axes.Length == 0)
                 return keepDim ? Ones(rank) : new TensorShape();
@@ -1168,7 +1168,7 @@ namespace Unity.Sentis
             return strided;
         }
 
-        internal TensorShape Split(int axis, int start, int end)
+        public TensorShape Split(int axis, int start, int end)
         {
             Assert.IsTrue(0 <= start && start <= end && end <= this[axis], "Split.InputError: start and end must obey 0 <= start <= end <= dim");
 

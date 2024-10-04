@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Unity.Sentis
 {
-    static class ShapeInference
+    public static class ShapeInference
     {
         /// <summary>
         /// Calculates the output shape of a generalized 2D matrix multiplication operation with optional transposes.
