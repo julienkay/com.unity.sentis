@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Unity.Sentis
 {
-    static class BackendFactory
+    public static class BackendFactory
     {
         public static IBackend CreateBackend(BackendType backendType)
         {

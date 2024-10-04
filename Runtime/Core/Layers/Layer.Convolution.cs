@@ -5,7 +5,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for auto padding in image layers.
     /// </summary>
-    enum AutoPad
+    public enum AutoPad
     {
         /// <summary>
         /// Use explicit padding.

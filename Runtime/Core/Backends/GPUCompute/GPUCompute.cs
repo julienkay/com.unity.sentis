@@ -15,7 +15,7 @@ namespace Unity.Sentis
     /// <summary>
     /// Represents a GPUCompute backend ops.
     /// </summary>
-    partial class GPUComputeBackend : IBackend
+    public partial class GPUComputeBackend : IBackend
     {
         /// <summary>
         /// The command buffer to use for scheduling.
