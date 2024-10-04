@@ -8,7 +8,7 @@ namespace Unity.Sentis
     /// <summary>
     /// An interface that provides methods for operations on tensors.
     /// </summary>
-    interface IBackend : IDisposable
+    public interface IBackend : IDisposable
     {
         /// <summary>
         /// Performs a matrix multiplication operation with optional transposes: f(a, b) = a' x b'.

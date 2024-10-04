@@ -8,7 +8,7 @@ using static Unity.Sentis.ShaderPropertyID;
 
 namespace Unity.Sentis
 {
-    partial class GPUComputeBackend
+    public partial class GPUComputeBackend
     {
         // Binary Broadcast
 

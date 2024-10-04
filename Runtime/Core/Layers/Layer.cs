@@ -64,7 +64,7 @@ namespace Unity.Sentis.Layers
     /// <summary>
     /// Options for applying an activation at the end of executing a `FusedActivation` layer.
     /// </summary>
-    enum FusableActivation
+    public enum FusableActivation
     {
         /// <summary>
         /// Use no activation function.
